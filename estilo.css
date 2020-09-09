@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(224, 240, 218);   
+}
+
+.contenedor #titulo {
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    font-family: cursive;
+}
+
+.botonos {
+    display: flex;
+    background-color: rgb(85, 52, 233);
+    padding: 20px;
+    margin: 0 40px;
+}
+
+.botonos .btn_datos {
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.btn_datos input {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.botonos #buton3 {
+    visibility: hidden;
+}
+
+#error {
+    text-align: center;
+    font-size: 1.7em;
+    color: red;
+    margin: 10px;
+}
+
+
+.muestraDatos {
+    display: flex;   
+    width: 100%;
+    
+}
+
+.mostrar_resultado #lugarConsultar {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.muestraDatos .mostrar_resultado {
+   
+    font-size: 1em;
+    margin: 10px;
+    width: 100%;
+}
+
+.mostrar_resultado .titulo_consulta {
+   
+    margin: 15px;
+    padding: 5px;
+
+}
+
+
+
+.muestraDatos .muestra_icono img {
+    margin-top: 40px;
+
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.mostrar_resultado .muestra_icono {
+    text-align: center;
+   
+
+}

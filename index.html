@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 06 dwec</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!--libreria jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div id="titulo">Previsión del tiempo y control de contaminación.</div>
+        <div class="botonos">
+            <div class="btn_datos">
+                <!--button buscar localidad-->
+                <input type="text" id="localidad" placeholder="City name - Málaga, es" value="">
+            </div>
+            <div>
+                <!--button para mostrar el estado actual del clima-->
+                <button class="btn_datos" id="buton1">Estado actual del clima.</button>
+            </div>
+            <div>
+                <!--button para mostar el estado de la polución-->
+                <button class="btn_datos" id="buton2">Estado de la polución</button>
+            </div>
+            <div>
+                <!--button para mostar el mapa-->
+                <button class="btn_datos" id="buton3"></button>
+            </div>
+        </div>
+        <!--error si el campo localidad esta vacío-->
+        <div id="error"></div>
+
+
+        <div class="muestraDatos">
+            <!--muestra el resultado del Estado actual del clima. -->
+            <div class="mostrar_resultado">
+                <h4 id="lugarConsultar"></h4>
+                <div id="temperatura" class="titulo_consulta"></div>
+                <div id="viento" class="titulo_consulta"></div>
+                <div id="direccion" class="titulo_consulta"></div>
+                <div id="presionAtmosferica" class="titulo_consulta"></div>
+                <div id="gradoNubosidad" class="titulo_consulta"></div>
+                <div id="country_code" class="titulo_consulta"></div>
+            </div>
+            <div class="mostrar_resultado">
+                <!--muestra el icono del tiempo-->
+                <div class="muestra_icono"></div>
+            </div>
+
+            <div class="mostrar_resultado">
+                <!--muestra el resultado del estado de la polución -->
+                <div id="concentracion_superficie" class="titulo_consulta"></div>
+                <div id="indice_calidad_aire" class="titulo_consulta"></div>
+                <div id="concentracion_SO2_superficial" class="titulo_consulta"></div>
+                <div id="concentracion_NO2_superficial" class="titulo_consulta"></div>
+                <div id="concentracion_particulas" class="titulo_consulta"></div>
+            </div>
+        </div>
+
+    </div>
+    <!--archivo para conoctar con javascript-->
+    <script src="archivo.js"></script>
+</body>
+
+</html>
